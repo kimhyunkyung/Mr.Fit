@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Mr. Fit</string>
+    <string name="start_text">Touch to Start!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list">사용자 선택</string>
+    <string name="title_activity_lowerlist">운동 선택</string>
+    <string name="title_activity_sixinch_tutorial">튜토리얼 - 6inch</string>
+    <string name="title_activity_squat_tutorial">튜토리얼 - 스쿼트</string>
+    <string name="title_activity_setting">운동 옵션 설정</string>
+    <string name="title_activity_training">Mr. Fit</string>
+    <string name="title_activity_bluetooth_test">BluetoothTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_find_device">FindDeviceActivity</string>
+    <string name="title_activity_bluetooth_connect">BluetoothConnectActivity</string>
+    <string name="title_activity_sensor_select">SensorSelectActivity</string>
+    <string name="title_activity_crunch_tutorial">CrunchTutorialActivity</string>
+    <string name="title_activity_overheadpress_tutorial">OverheadpressTutorialActivity</string>
+    <string name="title_activity_crunch_setting">CrunchSettingActivity</string>
+    <string name="title_activity_overhead_press_setting">OverheadPressSettingActivity</string>
+    <string name="title_activity_overheadpress_training">OverheadpressTrainingActivity</string>
+    <string name="title_activity_crunch_training">CrunchTrainingActivity</string>
+    <string name="title_activity_device_scan">DeviceScanActivity</string>
+    <string name="title_activity_device_control">BLE Device Scan</string>
+
+    <string name="title_activity_sixinch_sensor">SixinchSensorActivity</string>
+    <string name="title_activity_crunch_sensor">CrunchSensorActivity</string>
+    <string name="title_activity_overheadextension_sensor">OverheadextensionSensorActivity</string>
+
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_connect">Connect</string>
+
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="no_data">No data</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="menu_scan">SCAN</string>
+    <string name="menu_stop">STOP</string>
+
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="title_activity_circle_progress">CircleProgressActivity</string>
+    <string name="title_activity_sixinch_sensorinfo">SixinchSensorinfoActivity</string>
+    <string name="title_activity_crunch_sensorscan">CrunchSensorscanActivity</string>
+    <string name="title_activity_arm_sensorscan">ArmSensorscanActivity</string>
+
+
+
+</resources>

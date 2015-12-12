@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mrfit" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name=".Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectUserActivity"
+            android:label="@string/title_activity_list"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".ExListActivity"
+            android:label="@string/title_activity_lowerlist"
+            android:parentActivityName=".SelectUserActivity" >
+        </activity>
+        <activity
+            android:name="com.example.sixinch.SixInchTutorialActivity"
+            android:label="튜토리얼 - 6 inch"
+            android:parentActivityName=".ExListActivity" >
+        </activity>
+        <activity
+            android:name="com.example.sixinch.SixInchSensorActivity"
+            android:label="센서부착안내 - 6 inch"
+            android:parentActivityName="com.example.sixinch.SixInchTutorialActivity" >
+        </activity>
+        <activity
+            android:name="com.example.sixinch.SixInchSensorscanActivity"
+            android:label="센서선택 - 6 inch"
+            android:parentActivityName="com.example.sixinch.SixInchSensorActivity" >
+        </activity>
+        <activity
+            android:name="com.example.sixinch.SixInchSettingActivity"
+            android:label="운동설정 - 6 inch"
+            android:parentActivityName="com.example.sixinch.SixInchSensorscanActivity" >
+        </activity>
+        <activity
+            android:name="com.example.sixinch.SixInchTrainingActivity"
+            android:label="운동진행 - 6 inch"
+            android:parentActivityName="com.example.sixinch.SixInchSettingActivity" >
+        </activity>
+        <activity
+            android:name="com.example.crunch.CrunchTutorialActivity"
+            android:label="튜토리얼 - Crunch"
+            android:parentActivityName=".ExListActivity" >
+        </activity>
+        <activity
+            android:name="com.example.arm.ArmTutorialActivity"
+            android:label="튜토리얼 - 팔운동"
+            android:parentActivityName=".ExListActivity" >
+        </activity>
+        <activity
+            android:name="com.example.crunch.CrunchSettingActivity"
+            android:label="운동설정 - Crunch"
+            android:parentActivityName="com.example.crunch.CrunchTutorialActivity" >
+        </activity>
+        <activity
+            android:name="com.example.arm.ArmSettingActivity"
+            android:label="운동설정 - 팔운동"
+            android:parentActivityName="com.example.arm.ArmTutorialActivity" >
+        </activity>
+        <activity
+            android:name="com.example.arm.ArmTrainingActivity"
+            android:label="운동진행 - 팔운동"
+            android:parentActivityName="com.example.arm.ArmSettingActivity" >
+        </activity>
+        <activity
+            android:name="com.example.crunch.CrunchTrainingActivity"
+            android:label="운동진행 - Crunch"
+            android:parentActivityName="com.example.crunch.CrunchSettingActivity" >
+        </activity>
+        <activity
+            android:name="com.example.crunch.CrunchSensorActivity"
+            android:label="센서부착안내 - Crunch" >
+        </activity>
+
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.example.arm.ArmSensorActivity"
+            android:label="센서부착안내 - 팔운동" >
+        </activity>
+        <activity
+            android:name="com.example.crunch.CrunchSensorscanActivity"
+            android:label="센서선택 - Crunch" >
+        </activity>
+        <activity
+            android:name="com.example.arm.ArmSensorscanActivity"
+            android:label="센서선택 - 팔운동" >
+        </activity>
+    </application>
+
+</manifest>

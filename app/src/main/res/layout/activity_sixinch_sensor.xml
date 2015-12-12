@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="정확한 부위에 밴드 착용한 후 \n목록에서 센서를 선택해 주세요!"
+        android:textColor="#E34803"
+        android:id="@+id/textView4"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:paddingTop="20dp" />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/sensorImage"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sensor_sixinches"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로고가 발목의 중앙에 위치하도록 착용해주세요"
+        android:id="@+id/checkBox6"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밴드가 발목을 덮도록 착용해주세요"
+        android:id="@+id/checkBox7"
+        android:layout_marginLeft="5dp" />
+
+
+
+</LinearLayout>

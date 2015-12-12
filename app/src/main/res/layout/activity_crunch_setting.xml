@@ -1,0 +1,116 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/upperview"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/eximage"
+            android:src="@drawable/crunch"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 정보"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedUserInfo"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upperview"
+        android:id="@+id/view3"   >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="운동 횟수"
+            android:id="@+id/textView1"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="70dp"
+            />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/getNumText3"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_marginLeft="50dp"
+            android:hint="세트"
+            android:textAlignment="center"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1회당 시간"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/getTimeText3"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_alignLeft="@+id/getNumText3"
+            android:hint="초"
+            android:textAlignment="center"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="쉬는 시간"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/getPauseText3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignLeft="@+id/getTimeText3"
+            android:hint="초"
+            android:textAlignment="center"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/nextButton999"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textColor="#E34803"
+        android:text="Next"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/view3"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
